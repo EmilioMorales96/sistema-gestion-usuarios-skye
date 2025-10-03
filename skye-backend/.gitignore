@@ -1,0 +1,80 @@
+# Laravel specific
+*.log
+.DS_Store
+.env
+.env.backup
+.env.production
+.env.local
+.env.test
+.phpactor.json
+.phpunit.result.cache
+/.fleet
+/.idea
+/.nova
+/.phpunit.cache
+/.vscode
+/.zed
+/auth.json
+/node_modules
+/public/build
+/public/hot
+/public/storage
+/storage/*.key
+/storage/pail
+/vendor
+Homestead.json
+Homestead.yaml
+Thumbs.db
+
+# Docker Sail specific
+docker-compose.override.yml
+
+# Storage and cache directories
+/bootstrap/cache/*.php
+/storage/app/*
+!/storage/app/.gitignore
+/storage/framework/cache/*
+!/storage/framework/cache/.gitignore
+/storage/framework/sessions/*
+!/storage/framework/sessions/.gitignore
+/storage/framework/testing/*
+!/storage/framework/testing/.gitignore
+/storage/framework/views/*
+!/storage/framework/views/.gitignore
+/storage/logs/*
+!/storage/logs/.gitignore
+
+# OS generated files
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory
+coverage
+
+# Auth keys and certificates
+*.pem
+*.p12
+*.key
+*.crt
+
+# Temporary files
+tmp/
+temp/
+
+# Build outputs
+build/
+dist/
+
+# NPM cache
+.npm
+
+# Yarn
+yarn-error.log

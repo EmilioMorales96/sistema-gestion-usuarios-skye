@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+  
+  body {
+    /* Paleta Grace - Monocromática futurista */
+    background: linear-gradient(135deg, #F5F5F0 0%, #E8E6E1 50%, #D4D1C9 100%);
+    color: #1A1A1A; /* Negro suave para máximo contraste */
+    min-height: 100vh;
+  }
+}
+
+@layer components {
+  /* Modern Glassmorphism Effect usando paleta del gatito */
+  .glass {
+    backdrop-filter: blur(12px);
+    background: rgba(247, 244, 241, 0.15); /* Pelaje blanco con más opacidad */
+    border: 1px solid rgba(247, 244, 241, 0.3); /* Borde más visible */
+    border-radius: 24px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+  }
+  
+
+
+
+  
+  /* Error Messages */
+  .error-message {
+    color: #E26D6D; /* Rojo coral más suave */
+    font-size: 14px;
+    margin-top: 8px;
+    font-weight: 500;
+  }
+
+  /* Floating Animation */
+  .floating {
+    animation: floating 3s ease-in-out infinite;
+  }
+  
+  @keyframes floating {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+  }
+
+  /* Pulse Animation */
+  .pulse-slow {
+    animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  /* Gradient Text usando paleta del gatito - MÁS OSCURO */
+  .gradient-text {
+    background: linear-gradient(135deg, #2D2D2D 0%, #6DBE8B 50%, #2D2D2D 100%); /* Gris oscuro → Verde gafas → Gris oscuro */
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800; /* Muy pesado para máxima legibilidad */
+  }
+
+  /* Modern Table usando paleta del gatito */
+  .modern-table {
+    backdrop-filter: blur(20px);
+    background: rgba(247, 244, 241, 0.12); /* Pelaje blanco con buena opacidad */
+    border: 1px solid rgba(247, 244, 241, 0.25);
+    border-radius: 32px;
+    overflow: hidden;
+  }
+  
+  .table-header {
+    background: rgba(247, 244, 241, 0.2); /* Pelaje más opaco para el header */
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(217, 217, 217, 0.3);
+  }
+  
+  .table-row {
+    border-bottom: 1px solid rgba(217, 217, 217, 0.15);
+    transition: background-color 0.2s ease;
+  }
+  
+  .table-row:hover {
+    background: rgba(205, 227, 209, 0.1); /* Verde pastel suave en hover */
+  }
+
+  /* Modern Scrollbar usando paleta del gatito */
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: rgba(247, 244, 241, 0.2); /* Pelaje blanco */
+    border-radius: 10px;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: rgba(109, 190, 139, 0.5); /* Verde gafas */
+    border-radius: 10px;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: rgba(109, 190, 139, 0.7); /* Verde gafas más intenso */
+  }
+}
