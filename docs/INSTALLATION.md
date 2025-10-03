@@ -21,7 +21,7 @@ Instrucciones detalladas para configurar y ejecutar el Sistema de Gestión de Us
 
 #### Clonar el Repositorio
 ```bash
-git clone [URL_DEL_REPOSITORIO]
+git clone https://github.com/EmilioMorales96/sistema-gestion-usuarios-skye.git
 cd Proyecto_Skye_Group
 ```
 
